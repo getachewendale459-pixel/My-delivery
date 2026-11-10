@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>የመጀመሪያ ገጼ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+  <h1>Welcome to E.G delivery!!</h1>
+  <p>with: <span id="count">0</span> products</p>
+  <p>total: <span id="total">0</span> birr</p>
+  <ul id="cart-list"></ul>
+  <button onclick="clearCart()">clear </button>
+  </header>
+<<main>
+  <div class="filters">
+    <button onclick="showProducts('all')">All</button>
+    <button onclick="showProducts('clothes')">Clothes</button>
+    <button onclick="showProducts('shoes')">Shoes</button>
+  </div>
+
+  <div class="products" id="products"></div>
+
+  <section class="order">
+    <h2>Order now</h2>
+    <input id="name" placeholder="Your name">
+    <input id="phone" placeholder="Phone number">
+    <input id="address" placeholder="Delivery address">
+    <button onclick="sendOrder()">Send order</button>
+  </section>
+</main>
+  <script src="script.js"></script>
+ </body>
+      </html>
